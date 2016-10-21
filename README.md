@@ -44,3 +44,4 @@ This Solution use the Databinding, and every javaBean must implement ViewModel.T
 ```
 
 ##ScreenShot
+![image](https://raw.githubusercontent.com/XBeats/and_lightadapter/master/screenshot/lightadapter.gif)
