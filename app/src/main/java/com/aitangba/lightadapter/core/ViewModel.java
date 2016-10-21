@@ -13,5 +13,5 @@ public interface ViewModel<Ad extends LightAdapter, T extends ViewDataBinding> {
 
     LightViewHolder<T> onCreateViewHolder(ViewGroup parent, int viewType);
 
-    void onBindViewHolder(Ad lightAdapter, T dataBinding);
+    void bindViewForData(Ad lightAdapter, T dataBinding);
 }

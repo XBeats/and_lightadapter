@@ -21,6 +21,11 @@ public class LightAdapter extends RecyclerView.Adapter<LightViewHolder> {
         notifyDataSetChanged();
     }
 
+    public void addData(ViewModel item) {
+        mList.add(item);
+        notifyDataSetChanged();
+    }
+
     @Override
     public int getItemViewType(int position) {
         if(mSparseArray == null) {
@@ -41,7 +46,7 @@ public class LightAdapter extends RecyclerView.Adapter<LightViewHolder> {
 
     @Override
     public void onBindViewHolder(LightViewHolder holder, int position) {
-        mList.get(position).onBindViewHolder(this, holder.mBinding);
+        mList.get(position).bindViewForData(this, holder.mBinding);
     }
 
     @Override
